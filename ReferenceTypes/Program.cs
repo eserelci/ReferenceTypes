@@ -6,24 +6,24 @@ namespace ReferenceTypes
     {
         static void Main(string[] args)
         {
-            ////int,decimal,float,enum,boolean gibi tipler değer tiplerdir(value types).
-            //int sayi1 = 10;//Değer tiplerde her şey stack'te referans tiplerde ise başlangıçta stack sonra heap'te gerçekleşir.
-            //int sayi2 = 20;
-            //sayi1 = sayi2;//Sayi1'in değeri sadece sayi2'nin değeridir. Bu da değer tipi ifade eder.
-            //sayi2 = 100;
-            //Console.WriteLine("Sayı 1 : "+sayi1);
-            ////Array,class,interface'ler referans tiplerdir. Bundan dolayı Sayılar1[0] değeri 1000 olmuştur.
-            //int[] sayilar1 = new int[] { 1, 2, 3 };//new 'lendiği zaman heapte veri oluşuyor ve bellekte tutuluyor.
-            //int[] sayilar2 = new int[] { 10, 20, 30 };
-            //sayilar1 = sayilar2;
-            //sayilar2[0] = 1000;
-            //Console.WriteLine("Sayilar1[0] ="+sayilar1[0]);
-            //Person person1 = new Person();
-            //Person person2 = new Person();
-            //person1.FirstName = "Eser";
-            //person2 = person1;//Referans tip olduğu için adres eşitlemesinden kaynaklı person2'nin de adı Elçim'dir.
-            //person1.FirstName = "Elçim";
-            //Console.WriteLine(person2.FirstName);
+            //int,decimal,float,enum,boolean gibi tipler değer tiplerdir(value types).
+            int sayi1 = 10;//Değer tiplerde her şey stack'te referans tiplerde ise başlangıçta stack sonra heap'te gerçekleşir.
+            int sayi2 = 20;
+            sayi1 = sayi2;//Sayi1'in değeri sadece sayi2'nin değeridir. Bu da değer tipi ifade eder.
+            sayi2 = 100;
+            Console.WriteLine("Sayı 1 : " + sayi1);
+            //Array,class,interface'ler referans tiplerdir. Bundan dolayı Sayılar1[0] değeri 1000 olmuştur.
+            int[] sayilar1 = new int[] { 1, 2, 3 };//new 'lendiği zaman heapte veri oluşuyor ve bellekte tutuluyor.
+            int[] sayilar2 = new int[] { 10, 20, 30 };
+            sayilar1 = sayilar2;
+            sayilar2[0] = 1000;
+            Console.WriteLine("Sayilar1[0] =" + sayilar1[0]);
+            Person person1 = new Person();
+            Person person2 = new Person();
+            person1.FirstName = "Eser";
+            person2 = person1;//Referans tip olduğu için adres eşitlemesinden kaynaklı person2'nin de adı Elçim'dir.
+            person1.FirstName = "Elçim";
+            Console.WriteLine(person2.FirstName);
             Customer customer = new Customer();
             customer.FirstName = "Salih";
             customer.CreditCardNumber = "1234567890";
